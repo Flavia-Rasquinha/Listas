@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,12 +15,10 @@ public class Funcao {
         int i = 1;
         do {
 
-            Double resultadoFunc = (double) (i * 3 + 100 / 2);
+            double resultadoFunc = (((i * 3.0) + 100.0) / 2.0);
             arrayList.add(resultadoFunc);
 
-            if (resultadoFunc >= 500 ){
-                break;
-            }
+            if (resultadoFunc >= 500 ) break;
             i++;
         }while (i > 0);
 
