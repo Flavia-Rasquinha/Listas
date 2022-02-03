@@ -12,15 +12,15 @@ public class Funcao {
 
         ArrayList<Double> arrayList = new ArrayList<>();
 
-        int i = 1;
+        double i = 1;
         do {
 
-            double resultadoFunc = (((i * 3.0) + 100.0) / 2.0);
-            arrayList.add(resultadoFunc);
+            i = (((i * 3.0) + 100.0) / 2.0);
+            if (i < 500){
+                arrayList.add(i);
+            }
 
-            if (resultadoFunc >= 500 ) break;
-            i++;
-        }while (i > 0);
+        }while (i < 500);
 
         return arrayList;
     }
